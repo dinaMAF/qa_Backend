@@ -1,5 +1,6 @@
-package apis_objects;
+package object_mappers;
 
+import apis_objects.SearchApiObjects;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;

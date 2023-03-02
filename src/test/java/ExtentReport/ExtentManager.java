@@ -1,5 +1,8 @@
-package base.test;
+package ExtentReport;
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -8,7 +11,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager {
     private static ExtentReports extent;
-    private static String reportFileName = "Test-Automaton-Report"+".html";
+    static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    static String date = simpleDateFormat.format(new Date());
+    static Random random=new Random();
+    static int randNum=random.nextInt();
+    private static String reportFileName = "Test-Automaton-Report"+"-"+date+"-"+randNum+".html";
     private static String fileSeperator = System.getProperty("file.separator");
     private static String reportFilepath = System.getProperty("user.dir") +fileSeperator+ "TestReport";
     private static String reportFileLocation =  reportFilepath +fileSeperator+ reportFileName;

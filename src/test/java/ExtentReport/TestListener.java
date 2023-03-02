@@ -1,5 +1,7 @@
-package base.test;
+package ExtentReport;
 
+import ExtentReport.ExtentManager;
+import ExtentReport.ExtentTestManager;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
